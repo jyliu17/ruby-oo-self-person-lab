@@ -22,25 +22,30 @@ class Person
 
     def happiness=(happiness)
         
-        @happiness = happiness
-        @happiness = 10 if @happiness > 10
-        @happiness = 0 if @happiness <0
-       
-        # if 
-        # @happiness > 10
-        # @happiness = 10
-        # elsif
-        # @happiness < 0
-        # @happiness = 0
-        # else
         # @happiness = happiness
-        # end
+        # @happiness = 10 if @happiness > 10
+        # @happiness = 0 if @happiness <0
+       
+        if happiness > 10
+            @happiness = 10
+        elsif happiness < 0
+            @happiness = 0
+        else
+            @happiness = happiness
+        end
     end
 
     def hygiene=(hygiene)
-        @hygiene = hygiene
-        @hygiene = 10 if @hygiene > 10
-        @hygiene = 0 if @hygiene <0
+        # @hygiene = hygiene
+        # @hygiene = 10 if @hygiene > 10
+        # @hygiene = 0 if @hygiene <0
+        if hygiene > 10
+            @hygiene = 10
+        elsif hygiene < 0
+            @hygiene = 0
+        else
+            @hygiene = hygiene
+        end
     end
 
     def happy?
